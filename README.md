@@ -1,11 +1,11 @@
-# 🩺 Transcrição Clínica & PEP AI
+# 🩺 Transcrição Clínica e PEP AI
 
 > **Suporte Digital Inteligente à Documentação em Saúde com IA (MedASR + Gemini)**  
 > Transcrição médica em tempo real, diarização de interlocutores (Médico vs. Paciente), documentação estruturada nos formatos **SOAP Integral** e **Anamnese PEP**, extração automática de medicamentos, alergias e **CID-10**, com privacidade e conformidade **LGPD**.
 
 ---
 
-## 🌟 Visão Geral
+##  Visão Geral
 
 O **Transcrição Clínica & PEP AI** foi desenvolvido para reduzir o tempo que médicos e profissionais de enfermagem gastam preenchendo prontuários eletrônicos (PEP), permitindo foco total na relação médico-paciente.
 
@@ -13,9 +13,9 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 
 ---
 
-## 🚀 Principais Funcionalidades
+##  Principais Funcionalidades
 
-### 🎙️ 1. Captura de Áudio Multicanal
+###  1. Captura de Áudio Multicanal
 * **Microfone do Consultório:** Gravação local (`getUserMedia`) com filtros ativos de cancelamento de eco, supressão de ruído ambiente e controle automático de ganho.
 * **Aba / Telemedicina:** Captura direta de áudio de reuniões remotas (`getDisplayMedia`) no Google Meet, Zoom, Teams ou WhatsApp Web.
 * **Upload de Áudio Gravado:** Suporte para arquivos `.mp3`, `.wav`, `.m4a`, `.ogg`, `.webm` e `.aac`.
@@ -23,7 +23,7 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 * **Pausar e Retomar:** Permite interromper a escuta temporariamente durante exame físico ou ligações telefônicas.
 * **Cronômetro Clínico:** Contador do tempo de duração do atendimento.
 
-### 📋 2. Geração Multidocumental com IA
+###  2. Geração Multidocumental com IA
 * **SOAP Integral (S.O.A.P.):**
   * **S — Subjetivo:** História relatada pelo paciente redigida tecnicamente em 3ª pessoa.
   * **O — Objetivo:** Sinais vitais relatados, achados do exame físico e inspeção.
@@ -32,32 +32,32 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 * **Anamnese Tradicional (Prontuário PEP):** Queixa Principal, HMA, Antecedentes Pessoais/Cirúrgicos, Hábitos de Vida, Alergias e Hipótese/Conduta.
 * **Orientações Didáticas ao Paciente:** Resumo acolhedor em linguagem simples com orientações de uso dos medicamentos e sinais de alarme, com botão de cópia rápida para envio via WhatsApp.
 
-### 💊 3. Extração Automática de Entidades Médicas
+###  3. Extração Automática de Entidades Médicas
 * **Medicamentos Estruturados:** Nome do princípio ativo ou comercial, dosagem, frequência, posologia e via de administração em cards clicáveis.
-* **🚨 Alerta de Alergias:** Destaque visual em badge vermelho de segurança do paciente para evitar prescrições inadvertidas.
-* **🏷️ Sugestão de CID-10 e CIAP-2:** Codificação diagnóstica recomendada com código oficial e descrição.
-* **⚠️ Sinais de Alarme (Red Flags):** Identificação de critérios de gravidade clínica.
+  **Alerta de Alergias:** Destaque visual em badge vermelho de segurança do paciente para evitar prescrições inadvertidas.
+* **Sugestão de CID-10 e CIAP-2:** Codificação diagnóstica recomendada com código oficial e descrição.
+* **Sinais de Alarme (Red Flags):** Identificação de critérios de gravidade clínica.
 
-### 👥 4. Diarização e Separação de Falas
+### 4. Diarização e Separação de Falas
 * Identificação de quem está falando em cada turno:
-  * 👨‍⚕️ `[Profissional de Saúde]`
-  * 🧑 `[Paciente / Acompanhante]`
+  *  `[Profissional de Saúde]`
+  *  `[Paciente / Acompanhante]`
 * Alternância com 1 clique diretamente na tag do segmento.
 * Botão de **Diarização Automática com IA** para classificação semântica retroativa.
 
-### 🔒 5. Privacidade & Conformidade LGPD
+### 5. Privacidade e Conformidade LGPD
 * **Modo Anonimizado com 1 Clique:** Mascara automaticamente nomes próprios, CPFs, RGs, números de telefone e e-mails (`[CPF-PROTEGIDO]`, `[PACIENTE-ANONIMIZADO]`).
 * Não armazena dados de pacientes em servidores externos de terceiros.
 
-### ⚡ 6. Produtividade & Integração
+### 6. Produtividade e Integração
 * **Cópia Modular:** Botões de cópia individual por bloco (ex: *Copiar apenas o Subjetivo*, *Copiar apenas a Conduta*, *Copiar Medicamento*) para colar nos campos do prontuário.
-* **Impressão Formal & PDF:** Modal de visualização com cabeçalho de prontuário eletrônico, data/hora formatada, campo de carimbo/assinatura e suporte nativo a `@media print`.
+* **Impressão Formal e PDF:** Modal de visualização com cabeçalho de prontuário eletrônico, data/hora formatada, campo de carimbo/assinatura e suporte nativo a `@media print`.
 * **Histórico de Atendimentos:** Consultas salvas localmente no navegador (`localStorage`) para recuperação rápida durante o plantão.
 * **Caso Clínico Demonstrativo:** Botão de 1 clique para injetar um caso real de cardiologia para demonstração imediata da inteligência clínica.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Frontend:**
   * [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
@@ -74,7 +74,7 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 
 ---
 
-## 📂 Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```
 ├── App.tsx                          # Componente raiz com orquestração de layouts e modais
@@ -99,7 +99,7 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 
 ---
 
-## ⚙️ Pré-requisitos e Instalação
+## Pré-requisitos e Instalação
 
 ### Pré-requisitos
 * **Node.js** v18 ou superior
@@ -140,7 +140,7 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 
 ---
 
-## 🧪 Como Testar a Aplicação
+##  Como Testar a Aplicação
 
 1. **Teste Imediato (Sem Microfone):**
    * Clique no botão **"Caso Demonstrativo"** ou **"Caso Exemplo (Teste Rápido)"**.
@@ -164,7 +164,7 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 
 ---
 
-## ⚖️ Conformidade Ética e Legal
+##  Conformidade Ética e Legal
 
 * **Aviso de Supervisão Profissional:** Esta aplicação constitui ferramenta de apoio tecnológico à documentação e produtividade clínica. O diagnóstico final, a prescrição terapêutica e a validação do registro em prontuário são de exclusiva responsabilidade do profissional de saúde devidamente habilitado (conforme resoluções do **CFM** e **COFEN**).
 * **Privacidade e LGPD:** O sistema disponibiliza filtros de anonimização e não compartilha dados de pacientes com terceiros.
@@ -173,4 +173,4 @@ A aplicação processa o diálogo da consulta (presencial via microfone, remota 
 
 ## 📄 Licença
 
-Distribuído sob a licença **MIT**. Consulte `LICENSE` para mais informações.
+Consulte `LICENSE` para mais informações.
