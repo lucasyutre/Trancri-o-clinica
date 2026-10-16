@@ -1,0 +1,11 @@
+{
+  "name": "Transcrição clinica",
+  "description": "Transcrição clínica em tempo real com MedASR, suporte a microfone, telemedicina e arquivos de áudio, diarização Médico/Paciente, documentação SOAP e Anamnese PEP estruturada, extração de medicamentos, alergias e CID-10, com privacidade LGPD.",
+  "requestFramePermissions": [
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
